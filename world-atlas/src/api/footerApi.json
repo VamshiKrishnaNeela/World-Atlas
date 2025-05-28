@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "MdPlace",
+    "title": "Find us",
+    "details": "Hyderabad, Telangana"
+  },
+  {
+    "icon": "IoCallSharp",
+    "title": "Call us",
+    "details": "9898989898"
+  },
+  {
+    "icon": "TbMailPlus",
+    "title": "Mail us",
+    "details": "wordatlas123@gmail.com"
+  }
+]
