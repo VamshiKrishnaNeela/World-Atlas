@@ -1,8 +1,6 @@
-# React + Vite
+Deployed Link: https://world-atlas-chi-weld.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Description:
+World Atlas is an interactive web application built with React and Vite that provides comprehensive geographical information about countries around the world. Users can explore details such as population, region, capital cities, and more through a clean, responsive interface. The project emphasizes fast performance, intuitive navigation, and visually appealing design to enhance the user experience.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Feel free to explore the live app via the link above.
