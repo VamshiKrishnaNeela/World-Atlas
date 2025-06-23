@@ -4,6 +4,10 @@ import { FaUsers, FaMapMarkerAlt, FaGlobe, FaArrowRight } from "react-icons/fa";
 export const CountryCard = ({ country }) => {
   const { flags, name, population, region, capital } = country;
   
+  const handleExploreClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  
   return (
     <li className="country-card">
       <div className="container-card">
@@ -57,7 +61,7 @@ export const CountryCard = ({ country }) => {
             </div>
           </div>
 
-          <NavLink to={`/country/${name.common}`}>
+          <NavLink to={`/country/${name.common}`} onClick={handleExploreClick}>
             <button style={{ width: '100%', justifyContent: 'center' }}>
               Explore Details <FaArrowRight />
             </button>

@@ -19,6 +19,8 @@ export const CountryDetails = () => {
   const [country, setCountry] = useState();
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
     startTransition(async () => {
       const res = await getCountryIndData(params.id);
       if (res.status === 200) {
@@ -26,6 +28,10 @@ export const CountryDetails = () => {
       }
     });
   }, [params.id]);
+
+  const handleBackClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   if (isPending) return <Loader />;
 
@@ -187,7 +193,7 @@ export const CountryDetails = () => {
         )}
         
         <div className="country-card-backBtn">
-          <NavLink to="/country" className="backBtn">
+          <NavLink to="/country" className="backBtn" onClick={handleBackClick}>
             <button style={{ 
               background: 'var(--bg-tertiary)', 
               border: '1px solid var(--border-color)',
